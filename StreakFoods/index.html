@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<!---->
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>StreakFood</title>       
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="main.js" as="script">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+ 
+<body>
+
+<!--Parallax Scrolling-->
+    <header id="parallax-img">
+        <div id='top'>
+            <img src="logo.png" alt="Logo" draggable="false" style="width:200px;height:100px;margin:auto;">
+            <a href="profile.html">LOG IN</a>
+        </div>
+        <div id='bot'>
+        <h1>Find Your Restaurant</h1>
+        <!--search box for query-->
+        <div id="search">
+            <form action="/actionPage.html" method="get">
+            <input type="text" id="Food" name="Food" placeholder="What do you want to eat tonight?"><button id="searchbutton">GO</button>
+            </form>
+        </div>
+    </div>
+    </header>
+
+<!--Image Banner and Text box-->
+    <div id="main-wrapper">
+        <div class="img-holder" id="img-holder">
+            <div class="images" id="img3"></div>
+            <div class="images" id="img2"></div>
+            <div class="images" id="img1"></div>
+        </div>
+        <div class="textbox-holder" id="textbox-holder">
+            <div id="textbox">
+                <h2>The More You Eat The More You Save</h2>
+                <p>Ordering food from our partnered restaurants gain you streak points. The more streak points you have, the higher your tier, and the more discounts and rewards there are. Who doesn't want free food every week?</p>
+            </div>
+        </div>
+    </div>
+<!--3 Part img+txt box-->
+    <div class="wrapper2">
+    <div class="imgtxts">
+        <div id="imgtxt1">
+            <img src="Rewards.png">
+            <h2>Begin your streaks</h2>
+            <p>Earn different rewards for different places you eat at.</p>
+            <a href="#">Start Here</a>
+        </div>
+        <div id="imgtxt2">
+            <img src="Giving.png">
+            <h2>Partner with StreakFood</h2>
+            <p>Reach and build loyal customers that keep coming back.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div id="imgtxt3">
+            <img src="Sparks.png">
+            <h2>Invite your friends</h2>
+            <p>Refer friends for bonus streak points. Earn as they earn.</p>
+            <a href="#">Invite Now</a>
+        </div>
+    </div>
+    </div>
+    <div class="end"></div>
+<script src="main.js"></script>
+</body>
+</html>

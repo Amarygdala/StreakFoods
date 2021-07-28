@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>StreakFood</title>       <!--web title -->
+    <link rel="stylesheet" type="text/css" href="profileStyle.css">
+    <!-- Add icon library -->
+</head>
+ 
+<body>
+
+<!--Parallax Scrolling-->
+    <header>
+        <div id='top'>
+            <img src="logo.png" alt="Logo" draggable="false" style="width:180px;height:80px;margin:auto;">
+        
+        </div>
+    </header>
+
+<div class="box">
+    <div class="box-left">
+        <div id="profile">
+            <img src="profileImg.jpg" style="width:150px; height:150px; border-radius:50%;">
+            <img src="Fire.png" style="width:50px; height:50px;">
+            <div id="profileinfo">
+                <p><b>Name:</b> John Doe</p>
+                <p><b>Date Joined:</b> 2020-02-15</p>
+                <p><b>Account #:</b> 3VHD</p>
+                <p><b>Balance:</b>  $888.88</p>
+            </div>
+        </div>
+        <div id="scheduling">
+            <h2>Pickup Schedule</h2>
+        <div id="date">
+            <div id="today">
+                <p><b>Today</b></p>
+                <p>The Exchange Cafe @9:00 AM</p>
+                <p>Pizza Shab @11:30 AM</p>
+            </div>
+            <div id="tomorrow">
+                <p><b>Tomorrow</b></p>
+                <p>Pizza Shab @9:00 AM</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="box-right">
+        <div id="history">
+            <h2>Current Streaks</h2>
+            
+                <div id="block1">
+                    <img src="theexchange.jpg" style="width: 120px;height: 120px;">
+                    <img src="Fire.png" style="width: 40px;height: 40px;left:40px;">
+                    <div>
+                        <p>Benefits: 10 percent off all purchases.</p>
+                        <p>Streak Points Until Next Rank:0</p>
+                    </div>
+    
+                </div>
+                <div id="block2">
+                    <img src="pizzashab.jpg" style="width: 120px;height: 120px;">
+                    <img src="Spark.png" style="width: 40px;height: 40px;left:40px;">
+                    <div>
+                        <p>Benefits: Get a free slice of pizza every month.</p> 
+                        <p>Streak Points Until Next Rank:100</p>
+                    </div>
+               
+                </div>
+                <div id="block3">
+                    <img src="mazeh.jpg" style="width: 120px;height: 120px;">
+                    <img src="Smoke.png" style="width: 40px;height: 40px;left:40px;">
+                    <div>
+                        <p>Benefits: Free cup of water.</p> 
+                        <p>Streak Points Until Next Rank:50</p>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+<button class="open-button" onclick="openForm()">+</button>
+<div class="form-popup" id="order">
+    <form action="/profile.html?submit=success" class="form-container">
+      <h1>New Schedule</h1>
+  
+      <label for="res"><b>Restaurant</b></label>
+      <select id="res">
+        <option>Nasir’s Gourmet Hot Dogs</option>
+        <option>The Exchange Cafe</option>
+        <option>Pizza Shab</option>
+        <option>The Hummussiah</option>
+        <option>Mazeh</option>
+      </select>
+      <label for="day"><b>Starting Next</b></label>
+      <select id="day">
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+      </select>
+  
+      <label for="interval"><b>Every</b></label>
+      <input type="number" placeholder="Enter Day Interval 1 to 7" required>
+      <label for="Notes"><b>Notes</b></label>
+      <input type="text" placeholder="I want..." required>
+  
+      <button type="submit" class="btn">Add</button>
+      <button type="button" class="btn close" onclick="closeForm()">Close</button>
+    </form>
+
+</body>
+<script src="form.js"></script>
+</html>
